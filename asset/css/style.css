@@ -24,6 +24,8 @@ ul{
 }
 .greenbar{
     background-color: var(--lightgreen);
+    width: 100%;
+    height: 2px;
 }
 
 
@@ -32,6 +34,7 @@ ul{
 /* #endregion Utilitys */
 nav a{
     color: var(--grey);
+    text-decoration: none;
 }
 nav li:hover{
     color: var(--white);
