@@ -7,7 +7,9 @@
     --bkg-siderbar: #000000;
     --bkg-footer: #282828;
     --bkg-container: #141922;
+    --bkg-upgrade: #080b12;
     /* #endregion colors */
+    --siderbarw: 200px;
 }
 
 /* #region debug */
@@ -18,7 +20,10 @@
 .debug .container {
     height: 500px;
 }
-
+.debug .sidebar {
+    height: 500px;
+    background-color: red;
+}
 
 
 /* #endregion debug */
@@ -38,12 +43,19 @@ ul {
 
 
 /* #endregion Utilitys */
+nav{
+    width: 100%;
+    justify-content: center;
+}
 nav a {
     color: var(--grey);
     text-decoration: none;
+    font-size: 0.7rem;
 }
-
-nav li:hover {
+nav li{
+    padding: 0.7rem;
+}
+nav li:hover a{
     color: var(--white);
 }
 
@@ -52,18 +64,43 @@ nav li:first-child .greenbar{
 }
 
 /* #region main */
+/* #region siderbar*/
+
+.sidebar{
+    width: 230px;
+    background-color: var(--bkg-siderbar);
+}
+
+/* #endregion siderbar*/
+/* #region section */
+
+section{
+    width: calc(100vw - 200px);
+    
+}
+/* #region upgrade */
+
+.upgrade{
+    background-color: var(--bkg-upgrade);
+}
+
+.upgrade button{
+    background-color: var(--bkg-upgrade);
+    border: 1px solid var(--white);
+}
+
+/* #endregion upgrade */
 /* #region container */
 .container {
-    height: 500px;
+    width: 100%;
     background-color: var(--bkg-container);
 }
 
-/* #region siderbar*/
-
-/* #endregion siderbar*/
 /* #region nav*/
 
 /* #endregion nav*/
 
 /* #endregion container */
+
+/* #endregion section */
 /* #endregion main */
