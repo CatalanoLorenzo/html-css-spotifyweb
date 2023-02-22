@@ -7,7 +7,7 @@
     --bkg-siderbar: #000000;
     --bkg-footer: #282828;
     --bkg-container: #141922;
-    --bkg-upgrade: #080b12;
+    --bkg-upgrade: #080b1280;
     /* #endregion colors */
     --siderbarw-lg: 230px;
     --footerh_lg: 90px;
@@ -128,7 +128,6 @@ section{
     position: fixed;
     justify-content: end;
     width: calc(100% - 1rem - var(--siderbarw-lg));
-    opacity: 60%;
 }
 
 .upgrade button{
@@ -137,10 +136,11 @@ section{
     color: var(--white);
     border-radius: 1rem;
     padding: 0.9rem;
-    opacity: 1;
     width: var(--buttonw)
 }
-
+.upgrade button:hover{
+    scale: 1.1;
+}
 /* #endregion upgrade */
 /* #region container */
 .container {
