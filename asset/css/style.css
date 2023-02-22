@@ -32,7 +32,11 @@ height: 100%;
 ul {
     list-style-type: none;
 }
-
+nav a,
+.sidebar a{
+    color: var(--grey);
+    text-decoration: none;
+}
 .greenbar {
     background-color: var(--lightgreen);
     display: none;
@@ -71,13 +75,14 @@ ul {
     
     padding-bottom: 0.6rem;
 }
-.card .top .ball{
+.ball{
     border-radius: 50%;
+    overflow: hidden;
+
 }
 .card .top .img{
     width: 100%;
     aspect-ratio: 1/1;
-    overflow: hidden;
     position: relative;
 }
 .card:hover .top .img img{
@@ -124,9 +129,46 @@ ul {
     height: calc(100vh - var(--footerh_lg) );
     width: var(--siderbarw-lg);
     background-color: var(--bkg-siderbar);
+    justify-content: space-between;
+}
+.sidebar,
+.sidebar .top,
+.sidebar .bottom{
     flex-direction: column;
 }
+.sidebar .bottom{
+    padding: 0 1.2rem;
 
+}
+.install{
+    border-bottom: 1px solid var(--grey);
+    padding: 0.7rem 2px;
+    align-items: center;  
+    gap: 0.7rem;
+}
+.install .ball svg{
+    height: 12px;
+}
+.install a{
+    font-size: 0.7rem;
+}
+.user{
+    padding: 0.9rem 2px 0.4rem 4px;
+    align-items: center;
+    gap: 0.7rem;
+}
+.user .ball{
+    background-color: var(--lightgrey);
+    aspect-ratio: 1/1;
+}
+
+.user .ball svg{
+    height: 25px;
+}
+.user a{
+    line-height: 1rem;
+    color: var(--white);
+}
 /* #endregion siderbar*/
 /* #region section */
 
@@ -175,8 +217,7 @@ nav{
     justify-content: center;
 }
 nav a {
-    color: var(--grey);
-    text-decoration: none;
+    
     font-size: 0.7rem;
 }
 
