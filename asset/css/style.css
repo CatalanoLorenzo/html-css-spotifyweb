@@ -143,6 +143,7 @@ section{
     position: fixed;
     justify-content: end;
     width: calc(100% - 1rem - var(--siderbarw-lg));
+    z-index: 3;
 }
 
 .upgrade button{
@@ -151,7 +152,7 @@ section{
     color: var(--white);
     border-radius: 1rem;
     padding: 0.9rem;
-    width: var(--buttonw)
+    width: var(--buttonw);
 }
 .upgrade button:hover{
     scale: 1.1;
@@ -208,5 +209,5 @@ nav li:first-child .greenbar{
 footer{
     background-color: var(--bkg-footer);
     height: 90px;
-    z-index: 2;
+    z-index: 3;
 }
