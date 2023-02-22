@@ -147,6 +147,7 @@ section{
     background-color: var(--bkg-container);
     padding: 1.5rem;
     overflow-y: auto;
+    max-height: 100%;
 
 }
 
@@ -190,5 +191,7 @@ nav li:first-child .greenbar{
 /* #endregion section */
 /* #endregion main */
 footer{
+    background-color: var(--bkg-footer);
     height: 90px;
+    z-index: 2;
 }
