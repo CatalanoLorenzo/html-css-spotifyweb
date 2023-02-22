@@ -152,6 +152,7 @@ section{
 
 /* #region nav*/
 nav{
+    margin-top: 92px;
     width: 100%;
     justify-content: center;
 }
