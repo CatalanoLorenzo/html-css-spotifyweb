@@ -83,6 +83,7 @@ section{
 .container .recently .row{
     padding: 1.5rem 0 ;
     width: 100%;
+    flex-wrap: wrap;
 }
 .container .recently h2{
     color: var(--white);
