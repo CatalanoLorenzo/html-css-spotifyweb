@@ -124,6 +124,7 @@ ul {
     height: calc(100vh - var(--footerh_lg) );
     width: var(--siderbarw-lg);
     background-color: var(--bkg-siderbar);
+    flex-direction: column;
 }
 
 /* #endregion siderbar*/
