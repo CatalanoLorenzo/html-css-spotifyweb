@@ -1,0 +1,10 @@
+:root{
+    /* #region colors */
+    --white: #ffffff;
+    --grey: #4e5258;
+    --lightgreen: #adff2f;
+    --lightgrey: #808080;
+    --bkg-siderbar: #000000;
+    --bkg-footer: #282828;
+    /* #endregion colors */
+}
