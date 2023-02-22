@@ -35,7 +35,8 @@ ul {
 .greenbar {
     background-color: var(--lightgreen);
     display: none;
-    width: 100%;
+    width: 50%;
+    margin: auto;
     height: 2px;
 }
 
