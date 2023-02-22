@@ -39,90 +39,39 @@ ul {
     margin: auto;
     height: 2px;
 }
-
-
-
-
-/* #endregion Utilitys */
-
-/* #region main */
-/* #region siderbar*/
-
-.sidebar{
-    height: calc(100vh - var(--footerh_lg) );
-    width: var(--siderbarw-lg);
-    background-color: var(--bkg-siderbar);
+.container .recently h2,
+.container .make_for h2,
+.container .popular h2  {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1.25rem 0 0.9rem 0;
 }
-
-/* #endregion siderbar*/
-/* #region section */
-
-section{
-    width: calc(100% - var(--siderbarw-lg));
-    height: calc(100vh - var(--footerh_lg) );
-
-    
+.container .make_for p,
+.container .popular p{
+    color: var(--grey);
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
 }
-/* #region upgrade */
-
-.upgrade{
-    margin-top: -1.5rem;
-    background-color: var(--bkg-upgrade);
-}
-
-.upgrade button{
-    background-color: var(--bkg-upgrade);
-    border: 1px solid var(--white);
-}
-
-/* #endregion upgrade */
-/* #region container */
-.container {
-    background-color: var(--bkg-container);
-    padding: 1.5rem;
-}
-.container .recently .row{
+.container .recently .row,
+.container .popular .row,
+.container .make_for .row
+{
     padding: 1.5rem 0 ;
     width: 100%;
     flex-wrap: wrap;
     margin: 0 -0.5rem;
 }
-.container .recently h2{
-    color: var(--white);
-    font-size: 1.5rem;
-}
-/* #region nav*/
-nav{
-    width: 100%;
-    justify-content: center;
-}
-nav a {
-    color: var(--grey);
-    text-decoration: none;
-    font-size: 0.7rem;
-}
-
-nav li{
-    padding: 0 0.7rem;
-}
-nav li:hover a{
-    color: var(--white);
-}
-
-nav li:first-child .greenbar{
-    display: block;
-}
-
-/* #endregion nav*/
 /* #region cards */
 .card{
     flex-direction: column;
-    padding:0.35rem 0.5rem;
-    margin-left:-;
+    padding:0.9rem 0.5rem;
 }
 .card .top{
     
     padding-bottom: 0.6rem;
+}
+.card .top .ball{
+    border-radius: 50%;
 }
 .card .top .img{
     width: 100%;
@@ -147,6 +96,85 @@ nav li:first-child .greenbar{
     line-height: 2;
 }
 /* #endregion cards */
+
+
+
+/* #endregion Utilitys */
+
+/* #region main */
+/* #region siderbar*/
+
+.sidebar{
+    height: calc(100vh - var(--footerh_lg) );
+    width: var(--siderbarw-lg);
+    background-color: var(--bkg-siderbar);
+}
+
+/* #endregion siderbar*/
+/* #region section */
+
+section{
+    width: calc(100% - var(--siderbarw-lg));
+    height: calc(100vh - var(--footerh_lg) );
+    
+}
+/* #region upgrade */
+
+.upgrade{
+    margin-top: -1.5rem;
+    margin-right: -1rem;
+    background-color: var(--bkg-upgrade);
+    position: fixed;
+    justify-content: end;
+    width: calc(100% - 1rem);
+}
+
+.upgrade button{
+    background-color: var(--bkg-upgrade);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* #endregion upgrade */
+/* #region container */
+.container {
+    background-color: var(--bkg-container);
+    padding: 1.5rem;
+    overflow-y: auto;
+
+}
+
+/* #region nav*/
+nav{
+    width: 100%;
+    justify-content: center;
+}
+nav a {
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+nav li{
+    padding: 0 0.7rem;
+}
+nav li:hover a{
+    color: var(--white);
+}
+
+nav li:first-child .greenbar{
+    display: block;
+}
+
+/* #endregion nav*/
+/* #region recently */
+/* #endregion recently */
+/* #region popular */
+
+
+
+
+/* #endregion popular */
 
 
 
