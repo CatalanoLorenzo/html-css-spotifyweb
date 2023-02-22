@@ -8,3 +8,13 @@
     --bkg-footer: #282828;
     /* #endregion colors */
 }
+/* #region debug */
+.debug [class^= col_]{
+    background-color: aqua;
+}
+
+
+
+
+
+/* #endregion debug */
