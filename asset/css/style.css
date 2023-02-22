@@ -84,6 +84,7 @@ section{
     padding: 1.5rem 0 ;
     width: 100%;
     flex-wrap: wrap;
+    margin: 0 -0.5rem;
 }
 .container .recently h2{
     color: var(--white);
@@ -115,7 +116,12 @@ nav li:first-child .greenbar{
 /* #region cards */
 .card{
     flex-direction: column;
-    padding: 0.7rem;
+    padding:0.35rem 0.5rem;
+    margin-left:-;
+}
+.card .top{
+    
+    padding-bottom: 0.6rem;
 }
 .card .top .img{
     width: 100%;
@@ -126,13 +132,18 @@ nav li:first-child .greenbar{
     max-width: 100%;
     object-fit: cover;
 }
+
 .card .bottom h3{
     color: var(--white);
     font-size: 1rem;
+    line-height: 0.9;
+    
+    
 }
 .card .bottom p{
     color: var(--lightgrey);
     font-size: 0.7rem;
+    line-height: 2;
 }
 /* #endregion cards */
 
