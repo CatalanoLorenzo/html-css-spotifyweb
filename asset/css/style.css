@@ -22,9 +22,28 @@
 ul{
     list-style-type: none;
 }
-
+.greenbar{
+    background-color: var(--lightgreen);
+}
 
 
 
 
 /* #endregion Utilitys */
+nav a{
+    color: var(--grey);
+}
+nav li:hover{
+    color: var(--white);
+}
+nav ul:first-child
+/* #region main */
+/* #region siderbar*/
+
+/* #endregion siderbar*/
+/* #region nav*/
+
+/* #endregion nav*/
+
+
+/* #endregion main */
