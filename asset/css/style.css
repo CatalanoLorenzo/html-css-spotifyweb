@@ -1,4 +1,4 @@
-:root{
+:root {
     /* #region colors */
     --white: #ffffff;
     --grey: #4e5258;
@@ -6,24 +6,30 @@
     --lightgrey: #808080;
     --bkg-siderbar: #000000;
     --bkg-footer: #282828;
+    --bkg-container: #141922;
     /* #endregion colors */
 }
+
 /* #region debug */
-.debug [class^= col_]{
+.debug [class^=col_] {
     background-color: aqua;
 }
 
-
+.debug .container {
+    height: 500px;
+}
 
 
 
 /* #endregion debug */
 /* #region Utilitys */
-ul{
+ul {
     list-style-type: none;
 }
-.greenbar{
+
+.greenbar {
     background-color: var(--lightgreen);
+    display: none;
     width: 100%;
     height: 2px;
 }
@@ -32,15 +38,26 @@ ul{
 
 
 /* #endregion Utilitys */
-nav a{
+nav a {
     color: var(--grey);
     text-decoration: none;
 }
-nav li:hover{
+
+nav li:hover {
     color: var(--white);
 }
-nav ul:first-child
+
+nav li:first-child .greenbar{
+    display: block;
+}
+
 /* #region main */
+/* #region container */
+.container {
+    height: 500px;
+    background-color: var(--bkg-container);
+}
+
 /* #region siderbar*/
 
 /* #endregion siderbar*/
@@ -48,5 +65,5 @@ nav ul:first-child
 
 /* #endregion nav*/
 
-
+/* #endregion container */
 /* #endregion main */
