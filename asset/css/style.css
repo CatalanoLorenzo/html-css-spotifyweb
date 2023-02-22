@@ -78,12 +78,27 @@ ul {
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
+    position: relative;
+}
+.card:hover .top .img img{
+    filter: brightness(0.5);
+}
+.card:hover .top .img i{
+    display: block;
 }
 .card .top .img img{
     max-width: 100%;
     object-fit: cover;
 }
-
+.card .top .img i{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    color: var(--white);
+    z-index: 2;
+}
 .card .bottom h3{
     color: var(--white);
     font-size: 1rem;
