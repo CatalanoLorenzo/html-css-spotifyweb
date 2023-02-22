@@ -11,6 +11,7 @@
     /* #endregion colors */
     --siderbarw-lg: 230px;
     --footerh_lg: 90px;
+    --buttonw: 12rem;
 }
 
 /* #region debug */
@@ -121,18 +122,23 @@ section{
 /* #region upgrade */
 
 .upgrade{
-    margin-top: -1.5rem;
-    margin-right: -1rem;
+    margin: -1.5rem 0 0 -1.5rem;
+    padding: 1.2rem 0.3rem 1.7rem 0;
     background-color: var(--bkg-upgrade);
     position: fixed;
     justify-content: end;
-    width: calc(100% - 1rem);
+    width: calc(100% - 1rem - var(--siderbarw-lg));
+    opacity: 60%;
 }
 
 .upgrade button{
     background-color: var(--bkg-upgrade);
     border: 1px solid var(--white);
     color: var(--white);
+    border-radius: 1rem;
+    padding: 0.9rem;
+    opacity: 1;
+    width: var(--buttonw)
 }
 
 /* #endregion upgrade */
