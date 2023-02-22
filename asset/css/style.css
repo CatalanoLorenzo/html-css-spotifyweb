@@ -136,6 +136,46 @@ nav a,
 .sidebar .bottom{
     flex-direction: column;
 }
+.sidebar .top{
+    color: var(--grey);
+}
+.sidebar .top .logo{
+    padding: 1.2rem;
+}
+.sidebar .top .logo .icon{
+    width: 132px;
+}
+.sidebar .top .navmenu{
+    flex-direction: column;
+}
+.navmenu .home,
+.navmenu .search,
+.navmenu .librery{
+    align-items: center;
+    padding: 0 1.2rem;
+}
+.navmenu .home:hover,
+.navmenu .search:hover,
+.navmenu .librery:hover {
+    color: var(--white);
+}
+.navmenu .home:hover .icon svg,
+.navmenu .search:hover .icon svg,
+.navmenu .librery:hover .icon svg{
+    color: var(--white);
+}
+.sidebar .top .navmenu .home{
+    border-left: 3px solid var(--lightgreen);
+    color: var(--white);
+}
+.sidebar .top .navmenu svg{
+    height: 22px;
+    fill: var(--grey);
+
+}
+.sidebar .top .navmenu h3{
+    padding: 0 0.5rem;
+}
 .sidebar .bottom{
     padding: 0 1.2rem;
 
