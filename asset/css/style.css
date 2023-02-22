@@ -9,7 +9,8 @@
     --bkg-container: #141922;
     --bkg-upgrade: #080b12;
     /* #endregion colors */
-    --siderbarw: 200px;
+    --siderbarw-lg: 230px;
+    --footerh_lg: 90px;
 }
 
 /* #region debug */
@@ -18,10 +19,9 @@
 }
 
 .debug .container {
-    height: 500px;
+height: 100%;
 }
 .debug .sidebar {
-    height: 500px;
     background-color: red;
 }
 
@@ -43,31 +43,13 @@ ul {
 
 
 /* #endregion Utilitys */
-nav{
-    width: 100%;
-    justify-content: center;
-}
-nav a {
-    color: var(--grey);
-    text-decoration: none;
-    font-size: 0.7rem;
-}
-nav li{
-    padding: 0.7rem;
-}
-nav li:hover a{
-    color: var(--white);
-}
-
-nav li:first-child .greenbar{
-    display: block;
-}
 
 /* #region main */
 /* #region siderbar*/
 
 .sidebar{
-    width: 230px;
+    height: calc(100vh - var(--footerh_lg) );
+    width: var(--siderbarw-lg);
     background-color: var(--bkg-siderbar);
 }
 
@@ -75,12 +57,15 @@ nav li:first-child .greenbar{
 /* #region section */
 
 section{
-    width: calc(100vw - 200px);
+    width: calc(100% - var(--siderbarw-lg));
+    height: calc(100vh - var(--footerh_lg) );
+
     
 }
 /* #region upgrade */
 
 .upgrade{
+    margin-top: -1.5rem;
     background-color: var(--bkg-upgrade);
 }
 
@@ -92,15 +77,70 @@ section{
 /* #endregion upgrade */
 /* #region container */
 .container {
-    width: 100%;
     background-color: var(--bkg-container);
+    padding: 1.5rem;
+}
+.container .recently .row{
+    padding: 1.5rem 0 ;
+    width: 100%;
+}
+.container .recently h2{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+/* #region nav*/
+nav{
+    width: 100%;
+    justify-content: center;
+}
+nav a {
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 0.7rem;
 }
 
-/* #region nav*/
+nav li{
+    padding: 0 0.7rem;
+}
+nav li:hover a{
+    color: var(--white);
+}
+
+nav li:first-child .greenbar{
+    display: block;
+}
 
 /* #endregion nav*/
+/* #region cards */
+.card{
+    flex-direction: column;
+    padding: 0.7rem;
+}
+.card .top .img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.card .top .img img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.card .bottom h3{
+    color: var(--white);
+    font-size: 1rem;
+}
+.card .bottom p{
+    color: var(--lightgrey);
+    font-size: 0.7rem;
+}
+/* #endregion cards */
+
+
 
 /* #endregion container */
 
 /* #endregion section */
 /* #endregion main */
+footer{
+    height: 90px;
+}
