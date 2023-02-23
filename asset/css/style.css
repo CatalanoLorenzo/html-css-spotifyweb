@@ -412,9 +412,14 @@ footer{
     font-size: 0.9rem;
     color: var(--white);
 }
-.left .name_song p{
+.left .name_song a{
     font-size: 0.8rem;
     color: var(--grey);
+}
+.left .name_song a:hover{
+    color: var(--white);
+    text-decoration: underline;
+    scale: 1.2;
 }
 .left .simbol{
     padding-left: 1.3rem;
@@ -424,6 +429,9 @@ footer{
     height: 1rem;
     margin: 0.5rem;
     fill: var(--grey);
+}
+.left .simbol svg:hover{
+    fill: var(--white);
 }
 .center{
     flex-direction: column;
@@ -462,6 +470,27 @@ footer{
 .center .simbol .playb:hover {
     scale: 2.5;
 }
-.center input[type="range"]:hover{
+.center input:hover,
+.right input:hover{
     background-image: linear-gradient( var(--lightgreen),var(--lightgreen));
+}
+.right{
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+.right svg{
+    height: 14px;
+    color: var(--white);
+    fill: var(--white);
+}
+.right input{
+    -webkit-appearance: none;
+    width: 116px;
+    height: 7px;
+    background: var(--grey);
+    border-radius: 5px;
+    background-image: linear-gradient( var(--white),var(--white));
+    background-size: 53% 100%;
+    background-repeat: no-repeat;
 }
