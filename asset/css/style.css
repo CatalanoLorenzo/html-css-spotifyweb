@@ -157,6 +157,9 @@ main{
 .sidebar .top .logo{
     padding: 1.2rem;
 }
+.logo .icon .logosm{
+    display: none;
+}
 .sidebar .top .logo .icon{
     width: 132px;
 }
@@ -567,9 +570,7 @@ footer{
     .sidebar .top .logo {
         padding: 25%
     }
-    .logo .icon .logosm{
-        display: block;
-    }
+    
     .logo .icon .logolg{
         display: none;
     }
