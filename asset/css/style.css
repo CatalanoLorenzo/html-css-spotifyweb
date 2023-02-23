@@ -425,3 +425,43 @@ footer{
     margin: 0.5rem;
     fill: var(--grey);
 }
+.center{
+    flex-direction: column;
+    align-items: center;
+}
+.center .simbol{
+    max-height: 40px;
+    width: 200px;
+    fill: var(--white);
+    margin-bottom: 1rem;
+    gap: 1rem;
+    justify-content: center;
+}
+.center .simbol svg{
+    height: 14px;
+}
+.center .simbol .playb {
+    scale: 2.1;
+}
+.center .playback_bar{
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+}
+
+.center input[type="range"] {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 7px;
+    background: var(--grey);
+    border-radius: 5px;
+    background-image: linear-gradient( var(--white),var(--white));
+    background-size: 53% 100%;
+    background-repeat: no-repeat;
+}
+.center .simbol .playb:hover {
+    scale: 2.5;
+}
+.center input[type="range"]:hover{
+    background-image: linear-gradient( var(--lightgreen),var(--lightgreen));
+}
