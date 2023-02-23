@@ -151,6 +151,8 @@ main{
     height: 80%;
 }
 
+/* #region top siderbar */
+/* #region Logo siderbar */
 
 .sidebar .top .logo{
     padding: 1.2rem;
@@ -161,27 +163,16 @@ main{
 .sidebar .top .navmenu{
     flex-direction: column;
 }
+/* #endregion Logo siderbar */
+/* #region navbar siderbar */
+
 .navmenu .home,
 .navmenu .search,
 .navmenu .librery{
     align-items: center;
     padding: 0.2rem 1.2rem;
 }
-.navmenu .home:hover,
-.navmenu .search:hover,
-.navmenu .librery:hover,
-.sidebar .top .playlist ul li:hover,
-.sidebar .top .playlist .add_playlist:hover h3{
-    color: var(--white);
-}
-.sidebar .top .playlist .add_playlist:hover .icon{
-    background-color: var(--white);
-}
-.navmenu .home:hover .icon svg path,
-.navmenu .search:hover .icon svg path,
-.navmenu .librery:hover .icon svg path{
-    fill: var(--white);
-}
+
 .sidebar .top .navmenu .home{
     border-left: 3px solid var(--lightgreen);
 }
@@ -189,21 +180,21 @@ main{
     color: var(--white);
 
 }
-.top .navmenu .home  .icon svg path{
+.sidebar .top .navmenu .home  .icon svg path{
     fill: var(--white);
 }
-
 .sidebar .top .navmenu svg {
     height: 22px;
 }
 .sidebar .top .navmenu svg path{
     fill: var(--grey);
-
 }
 .sidebar .top .navmenu h3{
     padding: 0 0.5rem;
     font-size: 0.7rem;
 }
+/* #endregion navbar siderbar */
+/* #region playlist siderbar */
 .sidebar .top .playlist{
     flex-direction: column;
     overflow-y: auto;
@@ -213,6 +204,7 @@ main{
     padding: 0.5rem 1.2rem;
     color: var(--white);
 }
+/* #region add playlist siderbar */
 .sidebar .top .playlist .add_playlist{
     padding: 0.3rem 1.2rem;
     align-items: center;
@@ -235,6 +227,7 @@ main{
     color: var(--bkg-siderbar);
     aspect-ratio: 1/1;
 }
+/* #endregion add playlist siderbar */
 .sidebar .top .playlist ul{
     padding: 0.3rem 1.2rem;
     overflow-y: auto;
@@ -245,14 +238,15 @@ main{
     padding: 0.3rem 0;
     font-size: 0.7rem;
 }
-{
-
-}
+/* #endregion playlist siderbar */
+/* #endregion top siderbar */
+/* #region bottom siderbar */
 .sidebar .bottom{
     padding: 0 1.2rem;
     height: var(--footerh_lg);
     
 }
+/* #region install siderbar */
 
 .install{
     border-bottom: 1px solid var(--grey);
@@ -269,6 +263,9 @@ main{
 .install a{
     font-size: 0.7rem;
 }
+/* #endregion install siderbar */
+/* #region user siderbar */
+
 .user{
     padding: 0.9rem 2px 0.4rem 4px;
     align-items: center;
@@ -286,6 +283,26 @@ main{
     line-height: 1rem;
     color: var(--white);
 }
+/* #endregion user siderbar */
+
+/* #endregion bottom siderbar */
+/* #region hover effect siderbar */
+.navmenu .home:hover,
+.navmenu .search:hover,
+.navmenu .librery:hover,
+.sidebar .top .playlist ul li:hover,
+.sidebar .top .playlist .add_playlist:hover h3{
+    color: var(--white);
+}
+.sidebar .top .playlist .add_playlist:hover .icon{
+    background-color: var(--white);
+}
+.navmenu .home:hover .icon svg path,
+.navmenu .search:hover .icon svg path,
+.navmenu .librery:hover .icon svg path{
+    fill: var(--white);
+}
+/* #endregion hover effect siderbar */
 /* #endregion siderbar*/
 /* #region section */
 
