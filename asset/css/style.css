@@ -123,16 +123,20 @@ nav a,
 /* #endregion Utilitys */
 
 /* #region main */
+main{
+    height: calc(100vh - var(--footerh_lg) );
+    overflow-y: auto;
+}
 /* #region siderbar*/
 
 .sidebar{
-    max-height: calc(100vh - var(--footerh_lg) );
     width: var(--siderbarw-lg);
     background-color: var(--bkg-siderbar);
 }
 .pp{
-    max-height: 100%;
+    
     justify-content: space-between;
+    height: calc(100vh - var(--footerh_lg) );
 
 }
 .pp,
@@ -144,7 +148,10 @@ nav a,
 }
 .sidebar .top{
     color: var(--grey);
+    height: 80%;
 }
+
+
 .sidebar .top .logo{
     padding: 1.2rem;
 }
@@ -162,8 +169,13 @@ nav a,
 }
 .navmenu .home:hover,
 .navmenu .search:hover,
-.navmenu .librery:hover {
+.navmenu .librery:hover,
+.sidebar .top .playlist ul li:hover,
+.sidebar .top .playlist .add_playlist:hover h3{
     color: var(--white);
+}
+.sidebar .top .playlist .add_playlist:hover .icon{
+    background-color: var(--white);
 }
 .navmenu .home:hover .icon svg path,
 .navmenu .search:hover .icon svg path,
@@ -194,6 +206,8 @@ nav a,
 }
 .sidebar .top .playlist{
     flex-direction: column;
+    overflow-y: auto;
+
 }
 .sidebar .top .playlist h3{
     padding: 0.5rem 1.2rem;
@@ -223,21 +237,31 @@ nav a,
 }
 .sidebar .top .playlist ul{
     padding: 0.3rem 1.2rem;
-    overflow-y: scroll;
+    overflow-y: auto;
+    max-height: 100%
+    ;
 }
 .sidebar .top .playlist ul li{
     padding: 0.3rem 0;
     font-size: 0.7rem;
 }
+{
+
+}
 .sidebar .bottom{
     padding: 0 1.2rem;
     height: var(--footerh_lg);
+    
 }
+
 .install{
     border-bottom: 1px solid var(--grey);
     padding: 0.7rem 2px;
     align-items: center;  
     gap: 0.7rem;
+}
+.install:hover a{
+    color: var(--white);
 }
 .install .ball svg{
     height: 12px;
