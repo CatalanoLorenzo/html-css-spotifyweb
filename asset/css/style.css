@@ -386,4 +386,21 @@ footer{
     background-color: var(--bkg-footer);
     height: 90px;
     z-index: 4;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    
+}
+.left .img_song{
+    width: 42px;
+    height: 42px;
+    
+}
+.left .img_song img{
+    max-width: 100%;
+}
+.left .name_song{
+    flex-direction: column;
+    
 }
