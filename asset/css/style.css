@@ -126,15 +126,21 @@ nav a,
 /* #region siderbar*/
 
 .sidebar{
-    height: calc(100vh - var(--footerh_lg) );
+    max-height: calc(100vh - var(--footerh_lg) );
     width: var(--siderbarw-lg);
     background-color: var(--bkg-siderbar);
-    justify-content: space-between;
 }
-.sidebar,
+.pp{
+    max-height: 100%;
+    justify-content: space-between;
+
+}
+.pp,
 .sidebar .top,
 .sidebar .bottom{
     flex-direction: column;
+    background-color: var(--bkg-siderbar);
+    z-index: 3;
 }
 .sidebar .top{
     color: var(--grey);
@@ -152,33 +158,80 @@ nav a,
 .navmenu .search,
 .navmenu .librery{
     align-items: center;
-    padding: 0 1.2rem;
+    padding: 0.2rem 1.2rem;
 }
 .navmenu .home:hover,
 .navmenu .search:hover,
 .navmenu .librery:hover {
     color: var(--white);
 }
-.navmenu .home:hover .icon svg,
-.navmenu .search:hover .icon svg,
-.navmenu .librery:hover .icon svg{
-    color: var(--white);
+.navmenu .home:hover .icon svg path,
+.navmenu .search:hover .icon svg path,
+.navmenu .librery:hover .icon svg path{
+    fill: var(--white);
 }
 .sidebar .top .navmenu .home{
     border-left: 3px solid var(--lightgreen);
-    color: var(--white);
 }
-.sidebar .top .navmenu svg{
+.sidebar .top .navmenu .home h3{
+    color: var(--white);
+
+}
+.top .navmenu .home  .icon svg path{
+    fill: var(--white);
+}
+
+.sidebar .top .navmenu svg {
     height: 22px;
+}
+.sidebar .top .navmenu svg path{
     fill: var(--grey);
 
 }
 .sidebar .top .navmenu h3{
     padding: 0 0.5rem;
+    font-size: 0.7rem;
+}
+.sidebar .top .playlist{
+    flex-direction: column;
+}
+.sidebar .top .playlist h3{
+    padding: 0.5rem 1.2rem;
+    color: var(--white);
+}
+.sidebar .top .playlist .add_playlist{
+    padding: 0.3rem 1.2rem;
+    align-items: center;
+
+}
+.sidebar .top .playlist .add_playlist h3{
+    padding: 0 0.3rem;
+    font-size: 0.8rem;
+    color: var(--grey);
+
+}
+.sidebar .top .playlist .add_playlist .icon{
+    background-color: var(--lightgrey);
+    width: 37px;
+    height: 37px;    
+}
+.sidebar .top .playlist .add_playlist .icon svg{
+    fill: var(--bkg-siderbar);
+    width: 37px;
+    color: var(--bkg-siderbar);
+    aspect-ratio: 1/1;
+}
+.sidebar .top .playlist ul{
+    padding: 0.3rem 1.2rem;
+    overflow-y: scroll;
+}
+.sidebar .top .playlist ul li{
+    padding: 0.3rem 0;
+    font-size: 0.7rem;
 }
 .sidebar .bottom{
     padding: 0 1.2rem;
-
+    height: var(--footerh_lg);
 }
 .install{
     border-bottom: 1px solid var(--grey);
@@ -291,5 +344,5 @@ nav li:first-child .greenbar{
 footer{
     background-color: var(--bkg-footer);
     height: 90px;
-    z-index: 3;
+    z-index: 4;
 }
