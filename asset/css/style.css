@@ -395,12 +395,33 @@ footer{
 .left .img_song{
     width: 42px;
     height: 42px;
+    margin-left: 0.6rem;
     
 }
 .left .img_song img{
     max-width: 100%;
+    aspect-ratio: 1/1;
 }
 .left .name_song{
-    flex-direction: column;
-    
+    flex-direction: column; 
+    padding-left: 0.6rem;
+    padding-right: 1.3rem;
+    justify-content: center;
+}
+.left .name_song h3{
+    font-size: 0.9rem;
+    color: var(--white);
+}
+.left .name_song p{
+    font-size: 0.8rem;
+    color: var(--grey);
+}
+.left .simbol{
+    padding-left: 1.3rem;
+    align-items:center;
+}
+.left .simbol svg {
+    height: 1rem;
+    margin: 0.5rem;
+    fill: var(--grey);
 }
